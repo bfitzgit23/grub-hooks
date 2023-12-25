@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Operation = Upgrade
+Type = Package
+Target = grub-btrfs
+
+[Action]
+Description = Update grub after installing or removing grub-btrfs.
+When = PostTransaction
+Depends = grub
+Exec = /usr/bin/grub-mkconfig -o /boot/grub/grub.cfg

@@ -1,0 +1,14 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = grub
+Target = nvidia-dkms
+Target = nvidia-open-dkms
+Target = nvidia-470xx-dkms-tkg
+
+[Action]
+Description = Executing Grub-mkconfig...
+When = PostTransaction
+Exec = /usr/bin/grub-mkconfig -o /boot/grub/grub.cfg
