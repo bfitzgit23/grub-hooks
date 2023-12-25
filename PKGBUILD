@@ -3,11 +3,12 @@
 pkgname=grub-hooks
 pkgdesc="Fixes, additions and enhancements to grub and os-prober."
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 arch=('any')
 license=('GPL')
 depends=(grub lsb-release)
 optdepends=(os-prober)
+replaces=("grub-tools")
 
 url=https://github.com/xerolinux/$pkgname
 _url="https://raw.githubusercontent.com/xerolinux/$pkgname/main"
