@@ -119,7 +119,7 @@ efi_target_file="$(find /boot -name $efi_boot_file)"
 
 if [[ $grub_type == "EFI" ]] && [[ -e "/boot/grub/$efi_target/core.efi" ]]; then
     _grub_install="grub-install --target=$efi_target --efi-directory=$efi_directory \
---bootloader-id=$bootloader_id --removable --recheck --force --disable-shim-lock"
+--bootloader-id=$bootloader_id --removable --recheck --force"
 elif [[ $grub_type == "MBR" ]]; then
     _grub_install="grub-install --target=i386-pc --boot-directory=/boot \
 --recheck --force $disk_name"
