@@ -3,7 +3,7 @@
 pkgname=grub-hooks
 pkgdesc="Fixes, additions and enhancements to grub and os-prober."
 pkgver=1.0.0
-pkgrel=3
+pkgrel=4
 arch=('any')
 license=('GPL')
 depends=(grub lsb-release xero-hooks)
