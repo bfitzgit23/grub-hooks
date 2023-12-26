@@ -10,8 +10,8 @@ depends=(grub lsb-release xero-hooks)
 optdepends=(os-prober)
 replaces=("grub-tools")
 
-url=https://github.com/xerolinux/$pkgname
-_url="https://raw.githubusercontent.com/xerolinux/$pkgname/main"
+url=https://github.com/bfitzgit23/$pkgname
+_url="https://raw.githubusercontent.com/bfitzgit23/$pkgname/main"
 
 source=(
   $_url/install-grub
