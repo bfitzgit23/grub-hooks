@@ -1,4 +1,4 @@
-# Maintainer: DarkXero <info@techxero.com>
+# Maintainer: StormOS-Dev
 
 pkgname=grub-hooks
 pkgdesc="Fixes, additions and enhancements to grub and os-prober."
